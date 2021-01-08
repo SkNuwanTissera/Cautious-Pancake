@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wellcome - Achala Kavinda</title>
+        
+        <!-- bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        
+        <!-- fontawesome -->
+        <link href="font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet">
+        <!-- clndr css -->
+        <link href="fullcalendar-2.8.0/fullcalendar.css" rel="stylesheet">
+        <!-- home css -->
+        <link href="css/home.css" rel="stylesheet">
+        <!-- main-content css -->
+        <link href="css/home_main_content.css" rel="stylesheet">
+    </head>
+    <body id="body">
+        
+        <div class="page-container">
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="col-md-2 col-sm-3 menu-bar">
+                        
+                         <div class="package-details">
+                             <a class="active" href="#package" aria-controls="package" role="tab" data-toggle="tab"> <i class="fa fa-envelope"></i></a>
+                             <p>Package</p>
+                        </div>
+                        
+                        <div class="notification">
+                            <a href="#user" aria-controls="user" role="tab" data-toggle="tab"> <i class="fa fa-bell"></i> </a>
+                            <p>Notification</p>
+                        </div>
+                        
+                        <div class="profile">
+                            <a href="#user" aria-controls="user" role="tab" data-toggle="tab"> <i class="fa fa-user"></i> </a>
+                            <p>Profile</p>
+                        </div>
+                        
+                        <div class="option">
+                             <a href="#setting" aria-controls="user" role="tab" data-toggle="tab"> <i class="fa fa-cog"></i></a>
+                            <p>Settings</p>
+                        </div>
+                    </div>
+                        
+                        <div class="col-md-10 col-sm-9 tab-container"><!-- main content -->                            
+                            <div class="tab-content"><!-- tab Content -->
+                                <div role="tabpanel" id="package" class="tab-pane active"><!-- Package tab -->                       
+                                    <div class="row"><!-- row -->                                        
+                                        <div class="selector-container col-sm-12"><!-- Selection -->
+                                            <div class="col-md-6">
+                                                <div class="col-sm-4">
+                                                    <p>Tour</p>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <select id="tour-selection" class="tour-selection">
+                                                  <option value="volvo" selected>Dabadiwa</option>
+                                                  <option value="saab">Thailand</option>
+                                                  <option value="vw">Singapore</option>
+                                                  <option value="audi">Solosmas Thane</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                 <div class="col-sm-4">
+                                                    Date
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <select id="date-selection" class="date-selection">
+                                                     <option value="8">8 days</option>
+                                                     <option value="12">12 days</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                        </div><!-- /selection  -->
+
+                                        <div class="col-md-6 left-side"><!-- left side  -->                                            
+                                            <div class="calendar" id='calendar'></div><!-- Calender -->
+                                        </div><!-- /left side -->
+
+                                        <div class="col-md-6 right-side"><!-- right side -->
+                                            <div class="info-container"><!-- info-container -->
+                                                <p class="info-header">Date <span class="info-date">Mon May 30 2016</span></p>
+                                                <hr/>
+                                                <div class="event"><!-- event -->
+                                                    <div class="row">
+                                                        <div class="col-sm-8">
+                                                            <p>Number Of Vacancies</p>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <p>20</p>
+                                                        </div>
+                                                        <div class="col-sm-4 pull-right">
+                                                                <a class="btn-add-customer" href="#">Book-Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /eent -->
+                                                <div class="reminder"><!-- reminder -->
+                                                    <div class="dropdown reminder-option">
+                                                          <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>
+                                                          </a>
+                                                          <ul class="dropdown-menu reminder-list" aria-labelledby="dLabel">
+                                                            <li><a href="#">All Tours</a></li>
+                                                            <li><a href="#">Selected</a></li>
+                                                              <li><a href="#">Setting</a></li>
+                                                          </ul>
+                                                    </div>
+                                                    <p class="reminder-month">June 2016 <span>  - Up Coming</span></p>
+                                                    <div id="reminder-carousel" class="carousel slide reminder-carousel" data-ride="carousel"><!-- reminder carousel -->
+                                                    
+                                                      <div class="carousel-inner" role="listbox"><!-- Wrapper for slides -->
+                                                        <div class="item active">
+                                                          <p class="item-header">4<sup>th</sup> June 2016</p>
+                                                            <hr/>
+                                                            <div class="row">
+                                                               <div class="col-sm-6 reminder-reservation-details">
+                                                                   <p>Number of Slots<span>20</span></p>
+                                                                   <p>Book Slots<span>20</span></p>
+                                                                   <p>Free Slots  <span>10</span></p>  
+                                                                   <a href="#" class="veiw-reminder-reservation-detais">Details
+                                                                   </a>
+                                                               </div>
+                                                               <div class="col-sm-6 reminder-tour-details">
+                                                                   <p>Departure  <span>20.30 P.M</span></p>
+                                                                   <p>Tour <span>Dabadiwa</span></p>  
+                                                                   <a href="#" class="veiw-reminder-reservation-detais">Details
+                                                                   </a>
+                                                               </div>
+                                                          </div>     
+                                                        </div>
+                                                        <div class="item">
+                                                           <p class="item-header">11<sup>th</sup> June 2016</p>
+                                                           <hr/>
+                                                           <div class="row">
+                                                               <div class="col-sm-6 reminder-reservation-detais">
+                                                                   <p>Number of Slots<span>20</span></p>
+                                                                   <p>Book Slots  <span>20</span></p>
+                                                                   <p>Free Slots <span>10</span></p>  
+                                                                   <a href="#" class="veiw-reminder-reservation-detais">Details
+                                                                   </a>
+                                                               </div>
+                                                               <div class="col-sm-6 reminder-tour-detais">
+                                                                   <p>Departure<span>20:45 P.M</span></p>
+                                                                   <p>Tour<span>Thailand</span></p>  
+                                                                   <a href="#" class="veiw-reminder-reservation-detais">Details
+                                                                   </a>
+                                                               </div>
+                                                          </div>     
+                                                        </div>
+                                                      </div><!-- /Wrapper for slides -->
+                                                        
+                                                        <!-- Controls -->
+                                                          <a class="left carousel-control" href="#reminder-carousel" role="button" data-slide="prev">
+                                                            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                                                          </a>
+                                                          <a class="right carousel-control" href="#reminder-carousel" role="button" data-slide="next">
+                                                            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                                                          </a><!-- /Controls -->
+                                                        
+                                                    </div><!-- /reminder carousel -->
+                                                </div><!-- /reminder -->
+                                            </div><!-- /info-container -->
+                                        </div><!-- /right side -->
+                                    </div><!-- /row -->
+                                   <div class="package-footer"><!-- package footer -->
+                                    
+                                  </div><!-- /package footer -->
+                                </div><!-- /main content -->
+
+                                 <!-- main content -->
+
+                                <div role="tabpanel" id="user" class="main-content tab-pane">
+
+                                </div>
+
+                                 <!-- main content -->
+
+                                <div role="tabpanel" id="setting" class="main-content tab-pane">
+                                    setting
+                                </div>
+
+
+                            </div><!-- /tab content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- moment js -->
+        <script src="fullcalendar-2.8.0/lib/moment.min.js"></script>
+        <!-- jquery js -->
+        <script src="js/jquery.js"  type="text/javascript"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <!-- fullcalendar js -->
+        <script src="fullcalendar-2.8.0/fullcalendar.min.js"></script>
+        <!-- home js -->
+        <script src="js/home.js" type="text/javascript"></script>
+        <!-- home-calander js -->
+        <script src="js/home-calander.js"></script>
+        
+        <script type="text/javascript">            
+                    $(document).ready(function() {
+
+                            $('#calendar').fullCalendar({
+                                header: {
+                                    left: 'prev,next today',
+                                    center: 'title',
+                                    right: 'month,basicWeek,basicDay'
+                                },
+                                defaultDate: '2016-06-12',
+                                editable: true,
+                                eventLimit: true, // allow "more" link when too many events
+                                events: [
+                                    {
+                                        title: 'All Day Event',
+                                        start: '2016-06-01'
+                                    },
+                                    {
+                                        title: 'Long Event',
+                                        start: '2016-06-07',
+                                        end: '2016-06-10'
+                                    },
+                                    {
+                                        id: 999,
+                                        title: 'Repeating Event',
+                                        start: '2016-06-09T16:00:00'
+                                    },
+                                    {
+                                        id: 999,
+                                        title: 'Repeating Event',
+                                        start: '2016-06-16T16:00:00'
+                                    },
+                                    {
+                                        title: 'Conference',
+                                        start: '2016-06-11',
+                                        end: '2016-06-13'
+                                    },
+                                    {
+                                        title: 'Meeting',
+                                        start: '2016-06-12T10:30:00',
+                                        end: '2016-06-12T12:30:00'
+                                    },
+                                    {
+                                        title: 'Lunch',
+                                        start: '2016-06-12T12:00:00'
+                                    },
+                                    {
+                                        title: 'Meeting',
+                                        start: '2016-06-12T14:30:00'
+                                    },
+                                    {
+                                        title: 'Happy Hour',
+                                        start: '2016-06-12T17:30:00'
+                                    },
+                                    {
+                                        title: 'Dinner',
+                                        start: '2016-06-12T20:00:00'
+                                    },
+                                    {
+                                        title: 'Birthday Party',
+                                        start: '2016-06-13T07:00:00'
+                                    },
+                                    {
+                                        title: 'Click for Google',
+                                        url: 'http://google.com/',
+                                        start: '2016-06-28'
+                                    }
+                                ]
+                            });
+
+                        });
+        </script>
+    </body>
+</html>

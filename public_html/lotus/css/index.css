@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    background-image: url('../images/lotus-01.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+}
+.wrapper{
+    padding: 2px;
+    background-color: rgba(0,0,0,0.4);
+}
+.page-content{
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+}
+.header{
+    
+}
+.header-title>p{
+    font-family: Verdana , Geneva, sans-serif;
+    color:#F85E0A;
+    font-size: 50px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.notification-div{
+    padding:5px;
+}
+.time-date{
+    margin-top: 45px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 30px;
+    padding: 30px;
+}
+.time-date>p{
+    color: white;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    height:0 auto;
+}
+.date{
+    font-size:20px;
+}
+.alert-box{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.alert-box  .notification ,.active-members{
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height:150px;
+    color: white;
+    margin: 5px 0px 5px 0px;
+    background-color: #F85E0A;
+    line-height: 150px;
+    font-size: 350%;
+}
+#logbox {
+  padding: 10px;
+  margin: 50px auto;
+  background-color:rgba(255,255,255,1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size:40px;
+  color:#F85E0A;
+  font-weight: 300;
+}
+
+h1, input {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.input {
+  width: 75%;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+.input:focus {
+  outline: none;
+  border-bottom-color: #F85E0A !important;
+}
+.input:hover {
+  border-bottom-color: #dcdcdc;
+}
+.input:invalid {
+  box-shadow: none;
+}
+
+.pass:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.inputButton {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color:#F85E0A;
+  border: none;
+  -webkit-box-shadow: 0 5px 0 #F85E0A;
+  -moz-box-shadow: 0 5px 0 #F85E0A;
+  box-shadow: 0 5px 0 #F85E0A;
+}
+.inputButton:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #F85E0A;
+  -moz-box-shadow: 0 3px 0 #F85E0A;
+  box-shadow: 0 3px 0 #F85E0A;
+}
+.inputButton:active {
+  top: 5px;
+  box-shadow: none;
+}
+.inputButton:focus {
+  outline: none;
+}

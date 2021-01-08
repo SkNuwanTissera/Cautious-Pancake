@@ -1,0 +1,239 @@
+body{
+     background-image: url(../images/lotus-01.jpg);
+    background-size: 100% 100%;
+}
+.page-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 50px;
+}
+.menu-bar{
+    padding: 5px;
+
+}
+.menu-bar .profile , .package-details ,.option,.notification {
+    position: relative;
+    min-height:100px;
+    margin: 5px 0px 5px 0px;
+    background-color:rgba(248, 94, 10,0.9);
+    color: white;
+    text-align: center; 
+    padding-top: 15px;
+}
+
+.menu-bar a{
+    position: relative;
+    color: white;
+}
+.menu-bar a>i{
+    padding: 5px;
+    color: white;
+    font-size:35px;
+    transition: all ease 1s;
+}
+.menu-bar a:hover{
+    color:rgba(52, 152, 219,1.0);
+    transition: all ease  0.5s;
+}
+.profile{
+   
+}
+.tab-container{
+    margin-top: 10px;
+    padding: 5px 5px 20px 5px;
+    background-color:rgba(248, 94, 10,0.8);
+}
+#package>.row{
+    position: relative;
+    width: 100%;
+    margin:0;
+}
+.selector-container{
+    position: relative;
+    width: 100%;
+    margin-bottom:10px;
+}
+.selector-container>.col-md-6{
+    padding: 5px; 
+    margin: 5px 0px 5px 0px;
+}
+.selector-container>.col-md-6>.col-sm-4{
+    text-align: center;
+    height:30px;
+    color: white;
+    line-height:30px;
+    font-size: 30px;
+}
+.selector-container>.col-md-6>.col-sm-8{
+    
+}
+.tour-selection,.date-selection{
+    width: 100%;
+    height:30px;
+    font-size: 20px;
+}
+.left-side,.right-side{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.calendar{
+    padding: 5px;
+    background-color: aliceblue;
+}
+.info-container{
+    padding: 5px;
+    background-color: rgba(0,0,0,0.8);
+}
+.info-header{
+    padding: 2px;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.info-header>span{
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: darkorange;
+}
+.info-container>hr{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.event,.reminder{
+    position: relative;
+    margin: 2px 0px 2px 0px;
+    padding: 5px 0px 10px 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+.event>.row{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+.btn-add-customer{
+    margin: 1px;
+    color: aliceblue;
+    background-color: orange;
+    padding: 5px;
+}
+.package-option{
+    margin: 20px 0px 10px 0px;    
+    text-align:center;
+}
+.package-option>li{
+    display: inline-block;
+    background-color: greenyellow;
+    min-width: 120px;
+    padding: 10px; 
+    transition: all ease 1s;
+}
+.package-option>li:hover{
+    background-color: green;
+    transition: all ease 1s;
+}
+.package-option>li>a{
+   font-size:15px;
+   font-weight: 800;
+   color:black;
+    text-decoration: none;
+}
+.reminder-option{
+    position: absolute;
+    top: 5px;
+    right:5px;
+    color: white;
+
+}
+.reminder-option>a{
+    color: whitesmoke;
+    padding: 2px;
+}
+.reminder-list{
+    position: relative;
+    top: 20px;
+    margin-right:-15px;
+    background-color: rgba(0,0,0,0.8);
+  
+}
+.reminder-list>li>a{
+      color: white;
+}
+.reminder-month{
+    color: white;
+    padding: 2px 0px 2px 15px;
+    font-size: 100%
+}
+.reminder-month>span{
+    font-size: 70%;
+    color: red;
+    font-weight: 700;
+}
+.reminder-carousel{
+    padding: 5px;
+}
+.reminder-carousel>.carousel-inner{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    max-height: 500px;
+}
+.reminder-carousel>.carousel-inner>.item{
+    text-align: center;
+}
+.reminder-carousel>.carousel-inner>.item>.item-header{
+    color: white;
+    font-size:110%;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.reminder-carousel>.carousel-inner>.item>hr{
+    margin: 5px 0px 5px 0px;
+    margin: 0 auto;
+    width: 90%;
+}
+.reminder-carousel>.right,.left{
+    color: wheat;
+    height:0px;
+}
+.reminder-carousel>.right>span,.left>span{
+  color: orange;
+  margin-top:0px;   
+}
+.reminder-carousel>.carousel-inner>.item>.row{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.reminder-carousel>.carousel-inner>.item>.row>.col-sm-6{
+    margin-top: 10px;
+    padding:10px 5px 5px 25px;
+    min-height: 120px;
+    text-align: left;
+}
+.reminder-carousel>.carousel-inner>.item>.row>.col-sm-6>p{
+    position: relative;
+    margin: 2px 0px 2px 0px;
+    color: white;
+    font-size: 90%;
+}
+.reminder-carousel>.carousel-inner>.item>.row>.col-sm-6>p>span{
+    position: absolute;
+    right: 5px;
+}
+.reminder-carousel>.carousel-inner>.item>.row>.col-sm-6>a{
+    position: absolute;
+    bottom: 10px;
+    margin-top: 20px;
+    padding: 5px 20px 5px 20px;
+    background-color: greenyellow;
+    color:black;
+}
+.reminder-reservation-details{}
+.reminder-tour-details{}
+.package-footer{
+    padding: 5px;
+}
